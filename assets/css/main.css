@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		background: #000000;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2917,7 +2917,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #000000;
 		}
 
 			.spotlights > section > .image {
@@ -3093,7 +3093,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #000000;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3117,14 +3117,17 @@ input, select, textarea {
 			line-height: inherit;
 			padding: 0 1.5em;
 		}
-
+			#header .logo img {
+				margin-right: 0.325em;
+				margin-top: 0.650em;
+			}
 			#header .logo strong {
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				background-color: #ffffff;
-				color: #242943;
+				color: #000000;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3242,7 +3245,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #8d82c4;
+				color: #000000;
 			}
 
 			#header.alt.style3 .logo strong {
@@ -3359,7 +3362,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/ciat7.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3389,7 +3392,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #000000;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3474,7 +3477,8 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-position: center -732px !important;
+			background-color: #000000;
 		}
 
 		#banner.style3:after {
@@ -3568,7 +3572,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		background-color: #000000;
 	}
 
 		#main > * {
