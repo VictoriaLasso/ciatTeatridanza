@@ -19,7 +19,7 @@ class JConfig {
 	public $db = 'ciatteatridanza';
 	public $dbprefix = 'ct_';
 	public $live_site = '';
-	public $secret = 'kMsKdRukGylcKtyq';
+	public $secret = 'DFTsawpIV8DKRIac';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'https://help.joomla.org/proxy?keyref=Help{major}{minor}:{keyref}&lang={langcode}';
@@ -57,8 +57,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'D:\\bitn\\w7p\\apache2\\htdocs\\ciatTeatridanza\\administrator/logs';
-	public $tmp_path = 'D:\\bitn\\w7p\\apache2\\htdocs\\ciatTeatridanza/tmp';
+	public $log_path = 'D:\\bitn\\w7p\\apache2\\htdocs\\ciatd\\administrator/logs';
+	public $tmp_path = 'D:\\bitn\\w7p\\apache2\\htdocs\\ciatd/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $shared_session = '0';
