@@ -9,7 +9,6 @@ menustyle:
   background-active: '#f12844'
 navigation:
   background: '#000000'
-  background-image: ''
   text-color: '#ffffff'
 offcanvas:
   background: '#f12844'
