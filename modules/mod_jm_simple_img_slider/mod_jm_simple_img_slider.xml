@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>MOD_JM_SIMPLE_IMG_SLIDER</name>
+	<creationDate>01/08/2017</creationDate>
+	<author>Joomla-Monster.com</author>
+	<copyright>Copyright (C) 2017 Joomla-Monster.com, All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>artur.kaczmarek@joomla-monster.com</authorEmail>
+	<authorUrl>https://joomla-monster.com</authorUrl>
+	<version>1.03</version>
+	<description>MOD_JM_SIMPLE_IMG_SLIDER_DESC</description>
+	<files>
+			<filename module="mod_jm_simple_img_slider">mod_jm_simple_img_slider.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>tmpl</folder>
+			<folder>language</folder>
+			<folder>fields</folder>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="MOD_JM_SIMPLE_IMG_SLIDER">https://joomla-monster.com/updates/jmsimpleimgslider.xml</server>
+	</updateservers>
+
+		<config>
+			<fields name="params" addfieldpath="/modules/mod_jm_simple_img_slider/fields">
+
+			<fieldset name="basic">
+				<field name="slides" type="jmelements" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_SLIDES" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_SLIDES_DESC" element_name="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_SLIDE" element_fields="title,imagebg,description,btn_url,btn_name,btn_icon,btn2_url,btn2_name,btn2_icon" element_field="title" filter="raw" />
+
+					<field name="title" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_TITLE" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_TITLE_DESC" />
+
+					<field name="imagebg" type="media" directory="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMAGE" />
+
+					<field name="description" type="textarea" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESCRIPTION" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESCRIPTION_DESC" />
+
+					<field name="btn_url" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_URL" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_URL_DESC" />
+					<field name="btn_name" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_NAME" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_NAME_DESC" />
+					<field name="btn_icon" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_ICON" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN1_ICON_DESC" />
+
+					<field name="btn2_url" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_URL" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_URL_DESC" />
+					<field name="btn2_name" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_NAME" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_NAME_DESC" />
+					<field name="btn2_icon" type="text" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_ICON" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_BTN2_ICON_DESC" />
+
+					<field type="spacer" />
+
+					<field name="color" type="color" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_COLOR" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_COLOR_DESC" />
+
+					<field name="link_title" type="radio" class="btn-group" default="0" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_LINK_TITLE" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_LINK_TITLE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+
+					<field name="show_indicators" type="radio" class="btn-group" default="0" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_SHOW_INDICATORS" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_SHOW_INDICATORS_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+
+					<field name="auto_play" type="radio" class="btn-group" default="0" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_AUTO_PLAY" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_AUTO_PLAY_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+
+					<field name="play_interval" type="number" default="5000" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_ANIMATION_INTERVAL" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_ANIMATION_INTERVAL_DESC" min="0" max="100000" step="1"  showon="auto_play:1" />
+
+					<field name="desc_width" type="radio" class="btn-group" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH_DESC">
+						<option value="0">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_FULL</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_PER</option>
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_PX</option>
+					</field>
+
+					<field name="desc_width_per" type="number" default="70" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH_PER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH_PER_DESC"  min="0" max="100" showon="desc_width:2" />
+					<field name="desc_width_px" type="number" default="500" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH_PX" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_WIDTH_PX_DESC" min="0" max="1920" showon="desc_width:1" />
+
+					<field name="desc_position" type="list" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_DESC">
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_OVER</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_BELOW</option>
+						<option value="3">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_ABOVE</option>
+						<option value="4">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_LEFT</option>
+						<option value="5">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_RIGHT</option>
+					</field>
+
+					<field name="desc_position_over" type="list" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_OVER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_DESC" showon="desc_position:1">
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_ALIGN_TOP</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_ALIGN_CENTER</option>
+						<option value="3">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_ALIGN_BOTTOM</option>
+						<option value="4">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_ALIGN_CUSTOM</option>
+					</field>
+
+					<field name="desc_positon_unit" type="radio" class="btn-group" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_UNIT" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_POSITION_UNIT_DESC" showon="desc_position_over:4">
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_PX</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_PER</option>
+					</field>
+
+					<field name="desc_top_px" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_TOP_PX" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_TOP_PX_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:1" max="1920" />
+					<field name="desc_bottom_px" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_BOTTOM_PX" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_BOTTOM_PX_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:1" max="1920" />
+					<field name="desc_left_px" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_LEFT_PX" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_LEFT_PX_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:1" max="1920" />
+					<field name="desc_right_px" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_RIGHT_PX" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_RIGHT_PX_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:1" max="1920" />
+
+					<field name="desc_top_per" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_TOP_PER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_TOP_PER_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:2" max="100" />
+					<field name="desc_bottom_per" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_BOTTOM_PER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_BOTTOM_PER_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:2" max="100" />
+					<field name="desc_left_per" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_LEFT_PER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_LEFT_PER_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:2" max="100" />
+					<field name="desc_right_per" type="number" default="" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_RIGHT_PER" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_DESC_RIGHT_PER_DESC" showon="desc_position_over:4[AND]desc_position:1[AND]desc_positon_unit:2" max="100" />
+
+
+					<field name="img_align" type="list" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMG_ALIGN" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMG_ALIGN_DESC" showon="desc_position:1[OR]desc_position:2[OR]desc_position:3">
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMG_ALIGN_CENTER</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMG_ALIGN_LEFT</option>
+						<option value="3">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_IMG_ALIGN_RIGHT</option>
+					</field>
+
+					<field name="min_height" type="number" default="0" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_MODULE_HEIGHT" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_MODULE_HEIGHT_DESC" min="0" max="5000" step="1" />
+
+					<field name="theme" type="list" default="1" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME_DESC">
+						<option value="1">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME_DEFAULT</option>
+						<option value="2">MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME_OVERRIDE</option>
+					</field>
+
+					<field type="note" name="theme_note" class="alert alert-info" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME_NOTE" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_THEME_NOTE_DESC" showon="theme:2" />
+
+					<field name="load_fontawesome" type="radio" class="btn-group" default="0" label="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_AWESOME" description="MOD_JM_SIMPLE_IMG_SLIDER_FIELD_AWESOME_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
