@@ -1,14 +1,64 @@
-preset: preset2
+preset: preset3
 base:
-  text-active-color: '#f12844'
+  background: 'rgba(255, 217, 0, 0.68)'
+  text-color: '#030303'
+  text-active-color: '#2db76a'
 accent:
-  color-1: '#f12844'
+  color-1: '#751508'
+font:
+  family-default: family=Jolly+Lodger
 button:
-  background-color: '#f12844'
+  background-color: '#004746'
 menustyle:
-  background-active: '#f12844'
+  background: '#000000'
+  text-color-active: 'rgba(10, 10, 3, 0.72)'
+  background-active: '#ffffff'
+  sublevel-text-color: '#ffffff'
+  sublevel-text-color-active: '#000000'
+  sublevel-background: '#eb3915'
+  sublevel-background-active: '#ffffff'
+top:
+  background: '#000000'
+  text-color: '#ffffff'
 navigation:
   background: '#000000'
   text-color: '#ffffff'
+header:
+  text-color: '#ffffff'
+above:
+  background: 'rgba(78, 38, 122, 0.53)'
+  text-color: '#000000'
+main:
+  text-color: '#030303'
+showcase:
+  background: '#000000'
+  text-color: '#ffffff'
+slideshow:
+  background: '#990000'
+  text-color: '#000000'
+feature:
+  background: '#000000'
+expanded:
+  text-color: '#030303'
+extension:
+  background: 'rgba(10, 13, 10, 0.96)'
+  text-color: '#ffffff'
+bottom:
+  background: '#ffffff'
+  text-color: '#030303'
+copyright:
+  background: '#000000'
 offcanvas:
-  background: '#f12844'
+  background: 'rgba(14, 86, 240, 0.55)'
+  text-color: '#ffffff'
+  toggle-color: '#1e00e0'
+  width: 20rem
+  toggle-visibility: '2'
+breakpoints:
+  large-desktop-container: 100rem
+  desktop-container: 76rem
+  tablet-container: 51rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 51rem
+menu:
+  animation: g-dropdown-bounce-in-down

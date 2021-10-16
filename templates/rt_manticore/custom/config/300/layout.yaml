@@ -6,14 +6,11 @@ preset:
 layout:
   /top/:
     -
-      - system-messages-9828
+      - 'logo-2704 20'
+      - 'menu-2872 80'
   /navigation/:
     -
-      - 'logo-2704 20'
-      - 'menu-2872 46'
-      - 'social-3096 34'
-    -
-      - spacer-spacer-1703
+      - social-3096
   /slideshow/:
     -
       - slideshow-7675
@@ -83,22 +80,24 @@ structure:
   navigation:
     type: section
     attributes:
-      boxed: ''
+      boxed: '0'
       class: ''
       variations: ''
   slideshow:
     type: section
     attributes:
-      boxed: ''
+      boxed: '0'
       class: ''
+      variations: ''
   header:
     attributes:
-      boxed: ''
+      boxed: '2'
       class: ''
+      variations: ''
   above:
     type: section
     attributes:
-      boxed: ''
+      boxed: '2'
       class: ''
       variations: section-horizontal-paddings
   feature:
@@ -174,7 +173,7 @@ content:
       image: 'gantry-media://ciat4.png'
       link: '1'
       text: 'Ciat Teatridanza'
-      title: ''
+      title: 'Teatro de la Montaña'
       class: 'g-logo g-logo-manticore'
   menu-2872:
     block:
@@ -185,16 +184,16 @@ content:
   slideshow-7675:
     attributes:
       source: particle
-      height: 600px
-      thumbs: enabled
+      height: 200px
+      thumbs: disabled
       nav: enabled
-      dots: enabled
+      dots: disabled
       autoplay: enabled
-      autoplayTimeout: '8000'
-      loop: enabled
-      speed: '800'
+      autoplayTimeout: '833'
+      loop: disabled
+      speed: '300'
       touchmove: disabled
-      overlay: enabled
+      overlay: disabled
       effect: slide
       items:
         -
@@ -207,7 +206,7 @@ content:
           link: '#'
           linktarget: _self
           author_image: ''
-          author_text: 'Enter author text.'
+          author_text: 'El ciat es un lugar itinerante'
           author_link: '#'
           author_linktarget: _self
           title: teatro
@@ -217,7 +216,7 @@ content:
           articles: ''
           featured: include
         limit:
-          total: '5'
+          total: '1'
           start: '0'
         sort:
           orderby: publish_up

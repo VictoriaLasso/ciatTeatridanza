@@ -1,5 +1,5 @@
 name: '300'
-timestamp: 1595540252
+timestamp: 1595974743
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -36,8 +36,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  messages:
-    system-messages-9828: 'System Messages'
   logo:
     logo-2704: 'Logo / Image'
     logo-8823: 'Logo / Image'
@@ -46,8 +44,6 @@ particles:
   social:
     social-3096: Social
     social-5890: Social
-  spacer:
-    spacer-spacer-1703: Spacer
   slideshow:
     slideshow-7675: Slideshow
   position:
