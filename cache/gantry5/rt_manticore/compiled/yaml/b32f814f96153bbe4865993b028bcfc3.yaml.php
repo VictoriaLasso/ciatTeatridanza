@@ -1,0 +1,110 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => 'D:\\bitn\\w7p\\apache2\\htdocs\\ciatTeatridanza/templates/rt_manticore/custom/config/default/styles.yaml',
+    'modified' => 1596754113,
+    'data' => [
+        'preset' => 'preset3',
+        'base' => [
+            'background' => 'rgba(255, 255, 255, 0)',
+            'text-color' => '#030303',
+            'text-active-color' => '#2db76a'
+        ],
+        'accent' => [
+            'color-1' => '#2db76a'
+        ],
+        'font' => [
+            'family-default' => 'rubik, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+        ],
+        'button' => [
+            'text-color' => '#030303',
+            'background-color' => '#2db76a'
+        ],
+        'menustyle' => [
+            'background' => '#000000',
+            'text-color' => '#c2c3c6',
+            'text-color-alt' => '#c2c3c6',
+            'text-color-active' => '#ffffff',
+            'background-active' => '#2db76a',
+            'sublevel-text-color' => '#ffffff',
+            'sublevel-text-color-active' => '#ffffff',
+            'sublevel-background' => '#000000',
+            'sublevel-background-active' => 'rgba(255,255,255,0.15)'
+        ],
+        'top' => [
+            'background' => '#000000',
+            'text-color' => '#ffffff'
+        ],
+        'navigation' => [
+            'background' => '#000000',
+            'background-image' => 'gantry-media://backgrounds/navigation/background-01.jpg',
+            'text-color' => '#ffffff'
+        ],
+        'header' => [
+            'background' => '#000000',
+            'text-color' => '#ffffff'
+        ],
+        'above' => [
+            'background' => 'rgba(255, 255, 255, 0)',
+            'text-color' => '#000000'
+        ],
+        'main' => [
+            'background' => 'rgba(255, 255, 255, 0)',
+            'text-color' => '#030303'
+        ],
+        'showcase' => [
+            'background' => '#000000',
+            'background-image' => 'gantry-media://backgrounds/showcase/img-01.jpg',
+            'text-color' => '#ffffff'
+        ],
+        'slideshow' => [
+            'background' => '#000000',
+            'text-color' => '#ffffff'
+        ],
+        'utility' => [
+            'background' => '#ffffff',
+            'text-color' => '#030303'
+        ],
+        'feature' => [
+            'background' => '#000000',
+            'text-color' => '#ffffff'
+        ],
+        'expanded' => [
+            'background' => 'rgba(255, 255, 255, 0)',
+            'text-color' => '#030303'
+        ],
+        'extension' => [
+            'background' => '#eef2ff',
+            'text-color' => '#030303'
+        ],
+        'bottom' => [
+            'background' => '#ffffff',
+            'text-color' => '#030303'
+        ],
+        'footer' => [
+            'background' => '#000000',
+            'text-color' => '#888888'
+        ],
+        'copyright' => [
+            'background' => '#000000',
+            'text-color' => '#666666'
+        ],
+        'offcanvas' => [
+            'background' => '#2db76a',
+            'text-color' => '#ffffff',
+            'toggle-color' => '#ffffff',
+            'width' => '13rem',
+            'toggle-visibility' => '1'
+        ],
+        'breakpoints' => [
+            'large-desktop-container' => '88rem',
+            'desktop-container' => '76rem',
+            'tablet-container' => '51rem',
+            'large-mobile-container' => '30rem',
+            'mobile-menu-breakpoint' => '51rem'
+        ],
+        'menu' => [
+            'animation' => 'g-fade-in-up'
+        ]
+    ]
+];

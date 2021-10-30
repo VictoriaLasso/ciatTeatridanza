@@ -1,0 +1,132 @@
+<?php
+return [
+    '@class' => 'Gantry\\Component\\File\\CompiledYamlFile',
+    'filename' => 'D:/bitn/w7p/apache2/htdocs/ciatd/templates/rt_manticore/custom/config/293/index.yaml',
+    'modified' => 1595538382,
+    'data' => [
+        'name' => 293,
+        'timestamp' => 1562114186,
+        'version' => 7,
+        'preset' => [
+            'image' => 'gantry-admin://images/layouts/default.png',
+            'name' => 'right_sidebar',
+            'timestamp' => 1560370512
+        ],
+        'positions' => [
+            'header-a' => 'Header A',
+            'above-a' => 'Above A',
+            'feature-a' => 'Feature A',
+            'showcase-a' => 'Showcase A',
+            'utility-a' => 'Utility A',
+            'expanded-a' => 'Expanded A',
+            'extension-a' => 'Extension A',
+            'bottom-a' => 'Bottom A'
+        ],
+        'sections' => [
+            'top' => 'Top',
+            'navigation' => 'Navigation',
+            'slideshow' => 'Slideshow',
+            'above' => 'Above',
+            'feature' => 'Feature',
+            'showcase' => 'Showcase',
+            'utility' => 'Utility',
+            'expanded' => 'Expanded',
+            'extension' => 'Extension',
+            'bottom' => 'Bottom',
+            'copyright' => 'Copyright',
+            'header' => 'Header',
+            'aside' => 'Aside',
+            'sidebar' => 'Sidebar',
+            'mainbar' => 'Main',
+            'footer' => 'Footer',
+            'offcanvas' => 'Offcanvas'
+        ],
+        'particles' => [
+            'logo' => [
+                'logo-9841' => 'Logo / Image',
+                'logo-6599' => 'Logo / Image'
+            ],
+            'menu' => [
+                'menu-7574' => 'Menu'
+            ],
+            'social' => [
+                'social-2794' => 'Social',
+                'social-9474' => 'Social'
+            ],
+            'simplecontent' => [
+                'simplecontent-7052' => 'Right Sidebar Example'
+            ],
+            'custom' => [
+                'custom-5370' => 'H2 Heading',
+                'custom-8809' => 'Right Sidebar',
+                'custom-2258' => 'Flexible Layouts'
+            ],
+            'content' => [
+                'system-content-7301' => 'Page Content'
+            ],
+            'messages' => [
+                'system-messages-1413' => 'System Messages'
+            ],
+            'position' => [
+                'position-position-6223' => 'Header A',
+                'position-position-2453' => 'Above A',
+                'position-position-5406' => 'Feature A',
+                'position-position-7901' => 'Showcase A',
+                'position-position-6878' => 'Utility A',
+                'position-position-8853' => 'Expanded A',
+                'position-position-3799' => 'Extension A',
+                'position-position-9836' => 'Bottom A'
+            ],
+            'newsletter' => [
+                'newsletter-3213' => 'Newsletter'
+            ],
+            'simplemenu' => [
+                'simplemenu-7041' => 'Simple Menu'
+            ],
+            'particlesjs' => [
+                'particlesjs-4565' => 'Particles'
+            ],
+            'copyright' => [
+                'copyright-2825' => 'Copyright'
+            ],
+            'mobile-menu' => [
+                'mobile-menu-1351' => 'Mobile Menu'
+            ]
+        ],
+        'inherit' => [
+            'default' => [
+                'top' => 'top',
+                'logo-9841' => 'logo-2704',
+                'menu-7574' => 'menu-2872',
+                'social-2794' => 'social-3096',
+                'header' => 'header',
+                'above' => 'above',
+                'feature' => 'feature',
+                'showcase' => 'showcase',
+                'utility' => 'utility',
+                'expanded' => 'expanded',
+                'extension' => 'extension',
+                'bottom' => 'bottom',
+                'footer' => 'footer',
+                'copyright' => 'copyright',
+                'offcanvas' => 'offcanvas',
+                'system-messages-1413' => 'system-messages-9828',
+                'position-position-6223' => 'position-position-7051',
+                'position-position-2453' => 'position-position-3264',
+                'position-position-5406' => 'position-position-7980',
+                'position-position-7901' => 'position-position-9435',
+                'position-position-6878' => 'position-position-5239',
+                'position-position-8853' => 'position-position-8124',
+                'position-position-3799' => 'position-position-4800',
+                'position-position-9836' => 'position-position-3343',
+                'logo-6599' => 'logo-8823',
+                'newsletter-3213' => 'newsletter-4035',
+                'social-9474' => 'social-5890',
+                'simplemenu-7041' => 'simplemenu-2324',
+                'particlesjs-4565' => 'particlesjs-4690',
+                'copyright-2825' => 'copyright-6444',
+                'mobile-menu-1351' => 'mobile-menu-2576'
+            ]
+        ]
+    ]
+];
